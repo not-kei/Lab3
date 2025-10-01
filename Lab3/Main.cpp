@@ -30,9 +30,6 @@ int main()
 	std::cin >> inputValue3;
 	std::cin >> inputValue4;
 
-	//debugging
-	std::cout << "Current values for input: \n" << inputValue1 << "\n" << inputValue2 << "\n" << inputValue3 << "\n" << inputValue4 << std::endl;
-
 	//calculate the user inputted values
 	float curMeanValue = calculateMean(inputValue1, inputValue2, inputValue3, inputValue4);
 	std::cout << "The Mean value using user inserted values is: " << curMeanValue << std::endl;
@@ -53,9 +50,6 @@ int main()
 	inFile >> inputValue3;
 	inFile >> inputValue4;
 	inFile.close(); //closing the file
-
-	//debugging
-	std::cout << "Current values for input: \n" << inputValue1 << "\n" << inputValue2 << "\n" << inputValue3 << "\n" << inputValue4 << std::endl;
 
 	//calculate the file inputted values
 	curMeanValue = calculateMean(inputValue1, inputValue2, inputValue3, inputValue4);
