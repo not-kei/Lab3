@@ -1,7 +1,7 @@
 /*
 	Olivia Dodds
 	C++ FA2025
-	Due: Oct 7th, 2025
+	Due: Oct 14th, 2025
 	Lab 3 User and File I/O
 	Using values from both the user and the file inMeanStd, calculates the Mean and Population Standard Deviation, then outputs the files
 	on the screen to the user as well as to the file outMeanStd
