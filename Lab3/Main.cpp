@@ -12,8 +12,8 @@
 #include <cmath>
 
 //function prototypes
-float calculateMean(float value1, float value2, float value3, float value4);
-float calculateStandardDeviation(float value1, float value2, float value3, float value4, float curMeanValue);
+float calculateMean(int value1, int value2, int value3, int value4);
+float calculateStandardDeviation(int value1, int value2, int value3, int value4, float curMeanValue);
 
 int main()
 {
@@ -67,13 +67,13 @@ int main()
 }
 
 //calculates the Mean value using values from both the user and the file
-float calculateMean(float value1_, float value2_, float value3_, float value4_)
+float calculateMean(int value1_, int value2_, int value3_, int value4_)
 {
-	return (value1_ * value2_ * value3_ * value4_) / 4;
+	return (value1_ + value2_ + value3_ + value4_) / 4.0f;
 }
 
 //calculates the StandardDeviation value using values from both the user and the file
-float calculateStandardDeviation(float value1_, float value2_, float value3_, float value4_, float curMeanValue_)
+float calculateStandardDeviation(int value1_, int value2_, int value3_, int value4_, float curMeanValue_)
 {
 	return std::sqrt((pow(value1_ - curMeanValue_, 2) + pow(value2_ - curMeanValue_, 2) + pow(value3_ - curMeanValue_, 2) +
 		pow(value4_ - curMeanValue_, 2)) / 4);
