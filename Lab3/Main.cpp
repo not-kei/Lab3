@@ -25,10 +25,7 @@ int main()
 
 	//inserting values to the variables
 	std::cout << "Please enter in some values. (Must be 4 values)" << std::endl;
-	std::cin >> inputValue1;
-	std::cin >> inputValue2;
-	std::cin >> inputValue3;
-	std::cin >> inputValue4;
+	std::cin >> inputValue1 >> inputValue2 >> inputValue3 >> inputValue4;
 
 	//calculate the user inputted values
 	float curMeanValue = calculateMean(inputValue1, inputValue2, inputValue3, inputValue4);
@@ -45,10 +42,7 @@ int main()
 	//opening the file inMeanStd.dat and changing variables to file's values
 	std::ifstream inFile;
 	inFile.open("inMeanStd.dat");
-	inFile >> inputValue1;
-	inFile >> inputValue2;
-	inFile >> inputValue3;
-	inFile >> inputValue4;
+	inFile >> inputValue1 >> inputValue2 >> inputValue3 >> inputValue4;
 	inFile.close(); //closing the file
 
 	//calculate the file inputted values
